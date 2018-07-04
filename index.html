@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SpaceX is the world's first private rocket company. Do you know these 10 facts? Take the quiz.">
+    <title>SpaceX Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="float-grid.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="dataBank.js"></script>
+  </head>
+  <body>
+
+    <header role="banner">
+        <div class="row">
+          <div class="col-12">
+            <h1>SpaceX Quiz</h1>
+            <p id='hide'>Most people don't know these SpaceX facts.</br>
+            Take the quiz and see if you do.</p>
+            <ul>
+              <li>Question: <span id='questionNumber'>0</span>/10</li> 
+              <li>Elons Collected: <span id='elonsCollected'>0</span>/10</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <main role="main">
+      <div class="row">
+        
+          <div id="render" class="questionContainer"></div>
+  
+      </div>
+    </main>
+  </body>
+</html>

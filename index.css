@@ -1,0 +1,141 @@
+* {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-align: center;
+
+}
+
+body {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1465788786008-f75a725b34e9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e088ec671a9d481a27a8b2c8b7c07d82&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+h1 {
+  font-size: 30px;
+}
+
+header {
+  background-color: rgba(173, 215, 229, .5);
+  border-radius: 8px;
+}
+
+header li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input:hover, 
+span.answer, 
+label:hover,
+button:hover {
+  cursor: pointer;
+}
+
+/* keeps radio button for a11y but doesn't display the button */
+input[type="radio"] {
+  height: 1px;
+  width: 1px;
+}
+
+label:hover {
+  border: 1px solid rgb(152, 251, 152);
+  background-color: rgb(152, 251, 152);
+  color: black;
+}
+
+label {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid rgba(152, 251, 152, .5);
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  color: black;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(152, 251, 152);
+  padding: 10px 30px 10px 30px;
+}
+
+button:hover {
+  background-color: rgba(152, 251, 152, .5);
+  transition: color 1s ease-in-out;
+}
+
+button:active {
+  filter: invert(70%)
+}
+
+#correctAnswer {
+  font-weight: bolder;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.questionContainer {
+  background-color: rgba(173, 215, 229, .5);
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+.selected {
+  background-color: rgba(152, 251, 152, .5);
+}
+
+.elonPicture {
+  width: 175px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 640px) {
+
+  * {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  body {
+    background: url('https://images.unsplash.com/photo-1465788786008-f75a725b34e9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e088ec671a9d481a27a8b2c8b7c07d82&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+  } 
+
+
+  .questionContainer {
+    background-color: rgba(173, 215, 229, .5);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    width: 66.6667%;
+  }
+
+}
